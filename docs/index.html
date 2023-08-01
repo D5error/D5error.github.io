@@ -12,14 +12,14 @@
     <div id="app">加载中...</div>
     <script>
 
-        var gitalkConfig={
+        const gitalk = new Gitalk({
                 clientID: '90a9ce71bd16598f1d02',
                 clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
                 repo: 'https://github.com/D5rrr/D5rrr.github.io',
                 owner: 'D5rrr',
                 admin: ['D5rrr'],
                 language: 'zh-CN',
-        };
+        })
 
         window.$docsify = {
             name: 'D5',    <!--侧边栏顶部-->
