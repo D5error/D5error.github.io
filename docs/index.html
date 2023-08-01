@@ -10,16 +10,23 @@
 </head>
 <body>
     <div id="app">加载中...</div>
+
+
     <script>
 
-        var gitalkConfig = {
+        const gitalk = new Gitalk({
                 clientID: '90a9ce71bd16598f1d02',
                 clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
-                repo: 'https://github.com/D5rrr/D5rrr.github.io',
+                repo: 'D5rrr.github.io',
                 owner: 'D5rrr',
                 admin: ['D5rrr'],
                 language: 'zh-CN',
-        }
+        })
+
+    </script>
+
+
+    <script>
 
         window.$docsify = {
             name: 'D5',    <!--侧边栏顶部-->
@@ -33,12 +40,10 @@
                 language:'chinese',
                 isExpected: false
             }
-            plugins: [
-                gitalk = new Gitalk();
-            ]
         }
 
     </script>
+
 
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
@@ -46,6 +51,7 @@
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
 
 </body>
 </html>
