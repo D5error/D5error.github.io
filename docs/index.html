@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 </head>
 <body>
     <div id="app">加载中...</div>
@@ -14,14 +14,14 @@
 
     <script>
 
-        const gitalk = new Gitalk({
-            clientID: '90a9ce71bd16598f1d02',
-            clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
-            repo: 'https://github.com/D5rrr/D5rrr.github.io',
-            owner: 'D5rrr',
-            admin: ['D5rrr'],
-            language: 'zh-CN',
-        })
+        var gitalkConfig={
+                clientID: '90a9ce71bd16598f1d02',
+                clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
+                repo: 'https://github.com/D5rrr/D5rrr.github.io',
+                owner: 'D5rrr',
+                admin: ['D5rrr'],
+                language: 'zh-CN',
+        }
 
         window.$docsify = {
             name: 'D5',    <!--侧边栏顶部-->
@@ -43,7 +43,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 </body>
 </html>
