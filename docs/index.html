@@ -18,20 +18,6 @@
     <div id="app">加载中...</div>
 
 
-    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-        const gitalk = new Gitalk({
-                clientID: '90a9ce71bd16598f1d02',
-                clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
-                repo: 'D5rrr.github.io',
-                owner: 'D5rrr',
-                admin: ['D5rrr'],
-                language: 'zh-CN',
-        })
-    </script>
-
-
     <script>
         window.$docsify = {
             name: 'D5',    <!--侧边栏顶部-->
@@ -49,6 +35,20 @@
 
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+
+    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+                clientID: '90a9ce71bd16598f1d02',
+                clientSecret: '85dc772bc4993a55dde5554a60a8ddba85e46744',
+                repo: 'D5rrr.github.io',
+                owner: 'D5rrr',
+                admin: ['D5rrr'],
+                language: 'zh-CN',
+        })
+    </script>
 
 
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
