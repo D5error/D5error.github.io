@@ -12,6 +12,8 @@
 
 <img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=D5rrr)](https://git.io/streak-stats)
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
 
