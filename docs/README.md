@@ -16,4 +16,4 @@ height="100"/>
 <img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
 </p>
 
-[![D5rrr's GitHub stats](https://github-readme-stats.vercel.app/api?username=D5rrr)](https://github.com/D5rrr/github-readme-stats)
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=joway&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff&hide_title=true" />
