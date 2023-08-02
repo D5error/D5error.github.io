@@ -1,4 +1,72 @@
-![logo](_media/logo.png)
+<td>
+<font size="5" color=#ffffff>■</font>
+<font size="5" color=#d9a168>■</font>
+<font size="5" color=#ffffff>■■■■</font>
+<font size="5" color=#d9a168>■</font>
+<br>
+<font size="5" color=#ffffff>■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#ffffff>■■</font>
+<font size="5" color=#d9a168>■■</font>
+<br>
+<font size="5" color=#ffffff>■</font>
+<font size="5" color=#d9a168>■■■■■■</font>
+<br>
+<font size="5" color=#d9a168>■</font>
+<font size="5" color=#47273c>■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#47273c>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<br>
+<font size="5" color=#d9a168>■</font>
+<font size="5" color=#47273c>■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#47273c>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<br>
+<font size="5" color=#ffffff>■</font>
+<font size="5" color=#d9a168>■■■■■</font>
+<font size="5" color=#c68744>■</font>
+<br>
+<font size="5" color=#ffffff>■■■■</font>
+<font size="5" color=#c68744>■</font>
+<font size="5" color=#d9a168>■</font>
+<br>
+<font size="5" color=#ffffff>■■■</font>
+<font size="5" color=#efc39c>■■■</font>
+<font size="5" color=#d9a168>■</font>
+<br>
+<font size="5" color=#ffffff>■■■</font>
+<font size="5" color=#d9a168>■</font>
+<font size="5" color=#efc39c>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<br>
+<font size="5" color=#ffffff>■■■</font>
+<font size="5" color=#d9a168>■■■</font>
+<font size="5" color=#c68744>■■</font>
+<font size="5" color=#d9a168>■</font>
+<br>
+<font size="5" color=#ffffff>■■■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#c68744>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<br>
+<font size="5" color=#ffffff>■■■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#c68744>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<br>
+<font size="5" color=#ffffff>■</font>
+<font size="5" color=#efc39c>■</font>
+<font size="5" color=#d9a168>■■</font>
+<font size="5" color=#efc39c>■</font>
+<font size="5" color=#d9a168>■■■</font>
+<font size="5" color=#c68744>■■</font>
+<font size="5" color=#d9a168>■</font>
+<font size="5" color=#efc39c>■</font>
+<br>
+</td>
+
 
 # <big>D5</big>
 
