@@ -14,6 +14,8 @@
 
 <img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
+ [![D5rrr's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=d5rrr&theme=react)](https://github.com/d5rrr/github-readme-activity-graph)
+
 <h3 align="left">Languages and Tools:</h3>
 
 <p align="left">
