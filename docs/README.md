@@ -14,7 +14,7 @@
 
 <img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
-[![D5rrr's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=d5rrr&bg_color=ffffff&custom_title=提交图表&theme=vue)](https://github.com/d5rrr/github-readme-activity-graph)
+<img src="https://camo.githubusercontent.com/a722914e2a4a3fcdeab712cd279df2508d0a628f50e7e9a06c844021ea71728d/68747470733a2f2f6769746875622d726561646d652d61637469766974792d67726170682e76657263656c2e6170702f67726170683f757365726e616d653d64357272722662675f636f6c6f723d66666666666626637573746f6d5f7469746c653d254536253846253930254534254241254134254535253942254245254538254131254138267468656d653d767565">
 
 
 <h3 align="left">Languages and Tools:</h3>
