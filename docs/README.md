@@ -22,8 +22,5 @@
 
 <img src="https://ghchart.rshah.org/409ba5/D5rrr" />
 
-![[Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=D5rrr)](https://github.com/anuraghazra/github-readme-stats)
-
-
-        
+![D5rrr stats](https://github-readme-stats.vercel.app/api?username=D5rrr)    
        
