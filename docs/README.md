@@ -1,8 +1,23 @@
-<img src="_media/logo.png" 
-width="100"
-height="100"/>
+<div align="center">
+    <img src=
+        "_media/logo.png" 
+        width="100" 
+        height="100" 
+        style="margin: 0 auto;"
+    />
+</div>
 
-# D5
+  <div align="center">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=D5rrr&center=true&size=27" />
+   </a>
+  </div>
+
+
+
+
+
+
+
 
 <img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
@@ -15,5 +30,3 @@ height="100"/>
 <a href="https://www.python.org" target="_blank"> 
 <img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
 </p>
-
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=D5rrr&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff&hide_title=true" />
