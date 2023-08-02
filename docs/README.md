@@ -1,82 +1,14 @@
-<td>
-<font size="5" color=#ffffff>■</font>
-<font size="5" color=#d9a168>■</font>
-<font size="5" color=#ffffff>■■■■</font>
-<font size="5" color=#d9a168>■</font>
-<br>
-<font size="5" color=#ffffff>■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#ffffff>■■</font>
-<font size="5" color=#d9a168>■■</font>
-<br>
-<font size="5" color=#ffffff>■</font>
-<font size="5" color=#d9a168>■■■■■■</font>
-<br>
-<font size="5" color=#d9a168>■</font>
-<font size="5" color=#47273c>■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#47273c>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<br>
-<font size="5" color=#d9a168>■</font>
-<font size="5" color=#47273c>■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#47273c>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<br>
-<font size="5" color=#ffffff>■</font>
-<font size="5" color=#d9a168>■■■■■</font>
-<font size="5" color=#c68744>■</font>
-<br>
-<font size="5" color=#ffffff>■■■■</font>
-<font size="5" color=#c68744>■</font>
-<font size="5" color=#d9a168>■</font>
-<br>
-<font size="5" color=#ffffff>■■■</font>
-<font size="5" color=#efc39c>■■■</font>
-<font size="5" color=#d9a168>■</font>
-<br>
-<font size="5" color=#ffffff>■■■</font>
-<font size="5" color=#d9a168>■</font>
-<font size="5" color=#efc39c>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<br>
-<font size="5" color=#ffffff>■■■</font>
-<font size="5" color=#d9a168>■■■</font>
-<font size="5" color=#c68744>■■</font>
-<font size="5" color=#d9a168>■</font>
-<br>
-<font size="5" color=#ffffff>■■■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#c68744>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<br>
-<font size="5" color=#ffffff>■■■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#c68744>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<br>
-<font size="5" color=#ffffff>■</font>
-<font size="5" color=#efc39c>■</font>
-<font size="5" color=#d9a168>■■</font>
-<font size="5" color=#efc39c>■</font>
-<font size="5" color=#d9a168>■■■</font>
-<font size="5" color=#c68744>■■</font>
-<font size="5" color=#d9a168>■</font>
-<font size="5" color=#efc39c>■</font>
-<br>
-</td>
-
+<img src="_media/logo.png" 
+width="100"
+height="100"/>
 
 # <big>D5</big>
+
+<img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
 <span id="busuanzi_container_site_uv" style='display:none'>
     访客数:<span id="busuanzi_value_site_uv"></span> 人
 </span>
-
-<img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=D5rrr)](https://git.io/streak-stats)
 
 <h3 align="left">Languages and Tools:</h3>
 
