@@ -1,5 +1,6 @@
-* [**首页**]()
-
+* [<big>首页</big>]()
+* [<big>更新记录</big>](md/essay/更新记录.md)
+* 
 * 大二上
    
   * [Python](md/essay/python.md)   
