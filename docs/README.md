@@ -2,25 +2,33 @@
 
 # <big>D5</big>
 
-
 <span id="busuanzi_container_site_uv" style='display:none'>
     访客数:<span id="busuanzi_value_site_uv"></span> 人
 </span>
-
-[我的GitHub](https://github.com/D5rrr)
-
 ### 徽章
-**Status:** 可选.
 
-**要求:**
-- 不能有自己的标题
-- 必须用换行符分隔
-
-**建议:**
 - 使用 http://shields.io 或类似的服务来创建和托管图像
 - 添加 Standard Readme badge 徽章.
 
-<img src="https://ghchart.rshah.org/409ba5/D5rrr" />
+<img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 
-![D5rrr stats](https://github-readme-stats.vercel.app/api?username=D5rrr)    
-       
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> 
+
+
+	<a href="https://www.cprogramming.com/" target="_blank">
+		<img src="https://devicons.github.io/devicon/devicon.git/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
+	</a>
+    
+    
+	<a href="https://www.w3schools.com/cpp/" target="_blank">
+ 		<img src="https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+	</a> 
+    
+    
+	<a href="https://www.python.org" target="_blank"> 
+		<img src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+	</a> 
+
+
+</p>
