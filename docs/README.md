@@ -29,16 +29,4 @@
 </p>
 
 <script type="module" src="https://unpkg.com/giscus?module"></script>
-<giscus-widget
-id="comments"
-repo="D5rrr/D5rrr.github.io"
-repoid="R_kgDOKCAVzQ"
-category="General"
-categoryid="DIC_kwDOKCAVzc4CYSeA"
-mapping="url"
-reactionsenabled="1"
-emitmetadata="0"
-inputposition="top"
-theme="light_high_contrast"
-lang="zh-CN"
-></giscus-widget>
+<giscus-widget id="comments" repo="D5rrr/D5rrr.github.io" repoid="R_kgDOKCAVzQ" category="General" categoryid="DIC_kwDOKCAVzc4CYSeA" mapping="url" reactionsenabled="1" emitmetadata="0" inputposition="top" theme="light_high_contrast" lang="zh-CN"></giscus-widget>
