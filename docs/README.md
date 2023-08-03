@@ -28,5 +28,18 @@
     <a href="https://www.python.org" target="_blank"><img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
 </p>
 
-<script type="module" src="https://unpkg.com/giscus?module"></script>
-<giscus-widget id="comments" repo="D5rrr/D5rrr.github.io" repoid="R_kgDOKCAVzQ" category="General" categoryid="DIC_kwDOKCAVzc4CYSeA" mapping="url" reactionsenabled="1" emitmetadata="0" inputposition="top" theme="light_high_contrast" lang="zh-CN"></giscus-widget>
+<script src="https://giscus.app/client.js"
+        data-repo="D5rrr/D5rrr.github.io"
+        data-repo-id="R_kgDOKCAVzQ"
+        data-category="General"
+        data-category-id="DIC_kwDOKCAVzc4CYSeA"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_high_contrast"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
