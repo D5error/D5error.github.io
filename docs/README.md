@@ -18,7 +18,7 @@
 </div>
 
 
-<h3 align="left">Languages and Tools:</h3><p align="center">
+<h3 align="center">Languages and Tools:</h3><p align="center">
     <a href="https://www.cprogramming.com/" target="_blank"><img src="_media/c.svg" alt="c" width="40" height="40"/></a>
     <a href="https://www.w3schools.com/cpp/" target="_blank"><img src="_media/cplusplus.svg" alt="cplusplus" width="40" height="40"/></a>
     <a href="https://www.python.org" target="_blank"><img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
