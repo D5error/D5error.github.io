@@ -40,29 +40,44 @@
 <div id="comments" align="center"></div>
 
 <script>
-    var currentUrl = window.location.href;
     var targetUrl = "https://d5rrr.github.io/#/";
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://giscus.app/client.js";
+    scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
+    scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
+    scriptElement.setAttribute("data-category", "General");
+    scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
+    scriptElement.setAttribute("data-mapping", "url");
+    scriptElement.setAttribute("data-strict", "0");
+    scriptElement.setAttribute("data-reactions-enabled", "1");
+    scriptElement.setAttribute("data-emit-metadata", "0");
+    scriptElement.setAttribute("data-input-position", "top");
+    scriptElement.setAttribute("data-theme", "light_high_contrast");
+    scriptElement.setAttribute("data-lang", "zh-CN");
+    scriptElement.setAttribute("crossorigin", "anonymous");
+    scriptElement.async = true;
 
-    if (currentUrl === targetUrl) {
-        var scriptElement = document.createElement("script");
-        scriptElement.src = "https://giscus.app/client.js";
-        scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
-        scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
-        scriptElement.setAttribute("data-category", "General");
-        scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
-        scriptElement.setAttribute("data-mapping", "url");
-        scriptElement.setAttribute("data-strict", "0");
-        scriptElement.setAttribute("data-reactions-enabled", "1");
-        scriptElement.setAttribute("data-emit-metadata", "0");
-        scriptElement.setAttribute("data-input-position", "top");
-        scriptElement.setAttribute("data-theme", "light_high_contrast");
-        scriptElement.setAttribute("data-lang", "zh-CN");
-        scriptElement.setAttribute("crossorigin", "anonymous");
-        scriptElement.async = true;
-
-        document.getElementById("comments").appendChild(scriptElement);
+    // 检查当前URL是否与目标URL匹配
+    function checkUrl() {
+        if (window.location.href.startsWith(targetUrl)) {
+            document.getElementById("comments").appendChild(scriptElement);
+        } else {
+            // 如果不匹配，则移除评论元素
+            document.getElementById("comments").innerHTML = "";
+        }
     }
+
+    // 在页面加载完成后检查URL
+    window.onload = function() {
+        checkUrl();
+    };
+
+    // 监听浏览器历史记录变化，以便在URL更改时检查URL
+    window.onpopstate = function() {
+        checkUrl();
+    };
 </script>
+
 
 </body>
 </html>
