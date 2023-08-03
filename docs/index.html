@@ -37,32 +37,32 @@
     <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 
     
-<div id="comments" align="center">
-    <script>
-        var currentUrl = window.location.href;
-        var targetUrl = "https://d5rrr.github.io/#/";
-    
-        if (currentUrl === targetUrl) {
-            var scriptElement = document.createElement("script");
-            scriptElement.src = "https://giscus.app/client.js";
-            scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
-            scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
-            scriptElement.setAttribute("data-category", "General");
-            scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
-            scriptElement.setAttribute("data-mapping", "url");
-            scriptElement.setAttribute("data-strict", "0");
-            scriptElement.setAttribute("data-reactions-enabled", "1");
-            scriptElement.setAttribute("data-emit-metadata", "0");
-            scriptElement.setAttribute("data-input-position", "top");
-            scriptElement.setAttribute("data-theme", "light_high_contrast");
-            scriptElement.setAttribute("data-lang", "zh-CN");
-            scriptElement.setAttribute("crossorigin", "anonymous");
-            scriptElement.async = true;
-    
-            document.getElementById("comments").appendChild(scriptElement);
-        }
-    </script>
-</div>
+<div id="comments" align="center"></div>
+
+<script>
+    var currentUrl = window.location.href;
+    var targetUrl = "https://d5rrr.github.io/#/";
+
+    if (currentUrl === targetUrl) {
+        var scriptElement = document.createElement("script");
+        scriptElement.src = "https://giscus.app/client.js";
+        scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
+        scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
+        scriptElement.setAttribute("data-category", "General");
+        scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
+        scriptElement.setAttribute("data-mapping", "url");
+        scriptElement.setAttribute("data-strict", "0");
+        scriptElement.setAttribute("data-reactions-enabled", "1");
+        scriptElement.setAttribute("data-emit-metadata", "0");
+        scriptElement.setAttribute("data-input-position", "top");
+        scriptElement.setAttribute("data-theme", "light_high_contrast");
+        scriptElement.setAttribute("data-lang", "zh-CN");
+        scriptElement.setAttribute("crossorigin", "anonymous");
+        scriptElement.async = true;
+
+        document.getElementById("comments").appendChild(scriptElement);
+    }
+</script>
 
 </body>
 </html>
