@@ -28,18 +28,4 @@
     <a href="https://www.python.org" target="_blank"><img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
 </p>
 
-<script src="https://giscus.app/client.js"
-        data-repo="D5rrr/D5rrr.github.io"
-        data-repo-id="R_kgDOKCAVzQ"
-        data-category="General"
-        data-category-id="DIC_kwDOKCAVzc4CYSeA"
-        data-mapping="url"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light_high_contrast"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+<script src="https://giscus.app/client.js" data-repo="D5rrr/D5rrr.github.io" data-repo-id="R_kgDOKCAVzQ" data-category="General" data-category-id="DIC_kwDOKCAVzc4CYSeA" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light_high_contrast" data-lang="zh-CN" crossorigin="anonymous" async> </script>
