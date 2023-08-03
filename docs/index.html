@@ -36,8 +36,39 @@
 
     <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 
-    <div align="center">
-        <script src="https://giscus.app/client.js" data-repo="D5rrr/D5rrr.github.io" data-repo-id="R_kgDOKCAVzQ" data-category="General" data-category-id="DIC_kwDOKCAVzc4CYSeA" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light_high_contrast" data-lang="zh-CN" crossorigin="anonymous" async> </script>
+    
+    <div id="comments" align="center">
+        <script>
+            // 获取当前页面的 URL
+            var currentUrl = window.location.href;
+            // 指定需要显示评论框的 URL
+            var targetUrl = "https://D5rrr.github.io/#/";
+    
+            // 判断当前 URL 是否与目标 URL 匹配
+            if (currentUrl === targetUrl) {
+                // 创建评论框的 script 标签
+                var scriptElement = document.createElement("script");
+                scriptElement.src = "https://giscus.app/client.js";
+                scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
+                scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
+                scriptElement.setAttribute("data-category", "General");
+                scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
+                scriptElement.setAttribute("data-mapping", "url");
+                scriptElement.setAttribute("data-strict", "0");
+                scriptElement.setAttribute("data-reactions-enabled", "1");
+                scriptElement.setAttribute("data-emit-metadata", "0");
+                scriptElement.setAttribute("data-input-position", "top");
+                scriptElement.setAttribute("data-theme", "light_high_contrast");
+                scriptElement.setAttribute("data-lang", "zh-CN");
+                scriptElement.setAttribute("crossorigin", "anonymous");
+                scriptElement.async = true;
+    
+                // 将评论框添加到指定的元素中
+                var commentsElement = document.getElementById("comments");
+                commentsElement.appendChild(scriptElement);
+            }
+        </script>
     </div>
+
 </body>
 </html>
