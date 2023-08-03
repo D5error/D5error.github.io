@@ -37,17 +37,25 @@
     <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 
     
-<div id="giscus-container" align="center"></div>
+<style>
+    .giscus-container {
+        display: none;
+    }
+</style>
+
+<div id="giscus-container" class="giscus-container" align="center">
+    <script src="https://giscus.app/client.js" data-repo="D5rrr/D5rrr.github.io" data-repo-id="R_kgDOKCAVzQ" data-category="General" data-category-id="DIC_kwDOKCAVzc4CYSeA" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light_high_contrast" data-lang="zh-CN" crossorigin="anonymous" async> </script>
+</div>
 
 <script>
     function showElement() {
         var container = document.getElementById("giscus-container");
-        container.innerHTML = '<script src="https://giscus.app/client.js" data-repo="D5rrr/D5rrr.github.io" data-repo-id="R_kgDOKCAVzQ" data-category="General" data-category-id="DIC_kwDOKCAVzc4CYSeA" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light_high_contrast" data-lang="zh-CN" crossorigin="anonymous" async> </script>';
+        container.style.display = "block";
     }
 
     function hideElement() {
         var container = document.getElementById("giscus-container");
-        container.innerHTML = '';
+        container.style.display = "none";
     }
 
     window.addEventListener("hashchange", function() {
