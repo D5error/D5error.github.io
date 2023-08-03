@@ -1,16 +1,10 @@
-<div align="center">
-    <img src=
-        "_media/logo.png" 
-        width="100" 
-        height="100" 
-        style="margin: 0 auto;"
-    />
+<div id="logo" align="center">
+    <img src="_media/logo.png" width="100" height="100" style="margin: 0 auto;"/>
 </div>
 
-  <div align="center">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=D5rrr&center=true&size=27" />
-   </a>
-  </div>
+<div id="D5rrr's picture"align="center">
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=D5rrr&center=true&size=27"/>
+</div>
 <div align="center">
 <img src="https://ghchart.rshah.org/409ba5/D5rrr"/>
 </div>
