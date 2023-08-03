@@ -37,38 +37,28 @@
     <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 
     
-<div id="comments" align="center"></div>
-<script>
-    var currentUrl = window.location.href;
-
-    var scriptElement = document.createElement("script");
-    scriptElement.src = "https://giscus.app/client.js";
-    scriptElement.setAttribute("data-repo", "D5rrr/D5rrr.github.io");
-    scriptElement.setAttribute("data-repo-id", "R_kgDOKCAVzQ");
-    scriptElement.setAttribute("data-category", "General");
-    scriptElement.setAttribute("data-category-id", "DIC_kwDOKCAVzc4CYSeA");
-    scriptElement.setAttribute("data-mapping", "url");
-    scriptElement.setAttribute("data-strict", "0");
-    scriptElement.setAttribute("data-reactions-enabled", "1");
-    scriptElement.setAttribute("data-emit-metadata", "0");
-    scriptElement.setAttribute("data-input-position", "top");
-    scriptElement.setAttribute("data-theme", "light_high_contrast");
-    scriptElement.setAttribute("data-lang", "zh-CN");
-    scriptElement.setAttribute("crossorigin", "anonymous");
-    scriptElement.async = true;
-
-    scriptElement.onload = function() {
-        // 设置评论框的URL为当前页面的URL
-        if (typeof giscus !== 'undefined') {
-            giscus.setConfig({
-                mapping: 'url',
-                url: currentUrl
-            });
+<div align="center">
+    <script>
+        if (window.top === window.self) {
+            var script = document.createElement('script');
+            script.src = 'https://giscus.app/client.js';
+            script.setAttribute('data-repo', 'D5rrr/D5rrr.github.io');
+            script.setAttribute('data-repo-id', 'R_kgDOKCAVzQ');
+            script.setAttribute('data-category', 'General');
+            script.setAttribute('data-category-id', 'DIC_kwDOKCAVzc4CYSeA');
+            script.setAttribute('data-mapping', 'url');
+            script.setAttribute('data-strict', '0');
+            script.setAttribute('data-reactions-enabled', '1');
+            script.setAttribute('data-emit-metadata', '0');
+            script.setAttribute('data-input-position', 'top');
+            script.setAttribute('data-theme', 'light_high_contrast');
+            script.setAttribute('data-lang', 'zh-CN');
+            script.setAttribute('crossorigin', 'anonymous');
+            script.async = true;
+            document.getElementsByTagName('head')[0].appendChild(script);
         }
-    };
-
-    document.getElementById("comments").appendChild(scriptElement);
-</script>
+    </script>
+</div>
 
 </body>
 </html>
