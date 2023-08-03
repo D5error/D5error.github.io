@@ -1,5 +1,5 @@
 * [<big>首页</big>]()
-* [<big>更新记录</big>](md/essay/更新记录.md)
+* [<h1 style="color=#00ff00">更新记录</h1>](md/essay/更新记录.md)
 * 
 * 大二上
    
