@@ -22,6 +22,9 @@
     <a href="https://www.cprogramming.com/" target="_blank"><img src="_media/c.svg" alt="c" width="40" height="40"/></a>
     <a href="https://www.w3schools.com/cpp/" target="_blank"><img src="_media/cplusplus.svg" alt="cplusplus" width="40" height="40"/></a>
     <a href="https://www.python.org" target="_blank"><img src="_media/python.svg" alt="python" width="40" height="40"/></a> 
+    <a href="https://www.jetbrains.com/pycharm/" target="_blank"><img src="_media/pycharm.svg" alt="pycharm" width="40" height="40"/></a>
+    <a href="https://code.visualstudio.com/" target="_blank"><img src="_media/vscode.svg" alt="vscode" width="40" height="40"/></a>
+    <a href="https://github.com/" target="_blank"><img src="_media/github.svg" alt="github" width="40" height="40"/></a>
 </p>
 
 
