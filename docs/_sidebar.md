@@ -13,7 +13,6 @@
   
   * [待定]()
 
-* 额外
+* 随缘完成
 
-  * [html](md/essay/html.md) 
-   
+  * [html](md/essay/html.md)
