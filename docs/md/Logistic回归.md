@@ -13,7 +13,7 @@
     * 基于最优化方法的回归系数确定:Sigmoid函数的输入记为z,由下面公式得到z=w0x0+w1x1+w2x2+...+wnxn,如果采用向量的写法,上述公式可写作w^(T)x,它表示将这两个数值向量对应元素相乘然后全部加起来得到z值.其中的向量x是分类器的输入数据,向量w也就是我们要找到的最佳参数(系数),从而使得分类器尽可能地准确.为了寻找最佳系数,需要用到最优化理论的一些知识.我们这里使用的是梯度上升法
     * 梯度上升法:
         * 梯度:`向量=值+方向 梯度=向量 梯度=梯度值+梯度方向`
-        * 梯度上升法的思想:要找到某函数的最大值,最好的方法j是沿着该函数的梯度方向探寻.如果梯度符号记为 ▽,则函数f(x,y)的梯度由下式表示![Logistic回归](https://note.youdao.com/yws/api/personal/file/WEB1ef9d75d833cba16e1503d893e197cef?method=download&shareKey=3e98470e316567410b6bdcc3efd2a6f3)
+        * 梯度上升法的思想:要找到某函数的最大值,最好的方法j是沿着该函数的梯度方向探寻.如果梯度符号记为 ▽,则函数f(x,y)的梯度由下式表示![Logistic回归3](https://note.youdao.com/yws/api/personal/file/WEB1ef9d75d833cba16e1503d893e197cef?method=download&shareKey=3e98470e316567410b6bdcc3efd2a6f3)
         * 局部最优现象:
 
 * Logistic回归原理
