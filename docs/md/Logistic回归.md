@@ -15,13 +15,25 @@
         * 梯度:`向量=值+方向 梯度=向量 梯度=梯度值+梯度方向`
         * 梯度上升法的思想:要找到某函数的最大值,最好的方法j是沿着该函数的梯度方向探寻.如果梯度符号记为 ▽,则函数f(x,y)的梯度由下式表示
 ![Logistic回归3](https://note.youdao.com/yws/api/personal/file/WEB1ef9d75d833cba16e1503d893e197cef?method=download&shareKey=3e98470e316567410b6bdcc3efd2a6f3)
+        * 这个梯度意味着要沿x的方向移动 `∂f(x,y)/∂x` ,沿y的方向移动 `∂f(x,y)/∂y` .其中,函数f(x,y)必须要在待定义的点上有定义并且可微
+![Logistic回归4](https://note.youdao.com/yws/api/personal/file/WEB4d0200f7219990ba903132c601d858c8?method=download&shareKey=de645f2bb9f5bbcaf7c91c46bedb6728)
         * 局部最优现象:
+![Logistic回归5](https://note.youdao.com/yws/api/personal/file/WEB5939441a8e4c3a959c29f7cf457dfec4?method=download&shareKey=aa4e0798b1e75009f6e6e2cb282f71f4)
 
-* Logistic回归原理
-    * Logistic回归工作原理:
-    * Logistic回归开发流程:
-    * Logistic回归算法特点:
-    * 方向导数和梯度:
+* Logistic回归工作原理:
+
+```
+每个回归系数初始化为1
+重复R次:
+    计算整个数据集的梯度
+    使用步长 x 梯度 更新回归系数的向量
+返回回归系数
+```
+
+* Logistic回归算法特点:
+    * 优点:计算代价不高,易于理解和实现
+    * 缺点:容易欠拟合,分类精度可能不高
+    * 使用数据类型:数值型和标称型
 
 ## 2. 项目案例
 
