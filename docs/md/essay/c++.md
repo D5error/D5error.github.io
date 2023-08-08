@@ -53,8 +53,8 @@
 
 * 标准模板库STL
 
-    * [string类](md/string类.md)
-    * [标准模板库STL概述](md/标准模板库STL概述.md)
+    * [string类]
+    * [标准模板库STL概述]
     * [vector和deque和list]
     * [函数对象]
     * [set和multiset]
