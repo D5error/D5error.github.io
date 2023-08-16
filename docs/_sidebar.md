@@ -2,7 +2,7 @@
 * [更新记录](md/essay/更新记录.md)
 
 * 大二上
-    * [python（未整理）](md/essay/python.md)   
+    * [python（完结未整理）](md/essay/python.md)   
     * [c++](md/essay/c++.md)
     * [数据结构与算法](md/essay/数据结构与算法.md)
     * [离散数学](md/essay/离散数学.md)
