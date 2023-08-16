@@ -45,8 +45,8 @@
     * [类模板与派生和友元和静态成员变量](md/类模板与派生和友元和静态成员变量.md)
 
 * 标准模板库STL
-    * [string类]
-    * [STL概述]
+    * [string类](md/string类.md)
+    * [STL概述](md/STL概述.md)
     * [函数对象]
     * [vector和deque和list]
     * [set和multiset]
