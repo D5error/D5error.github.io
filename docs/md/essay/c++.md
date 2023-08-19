@@ -47,7 +47,7 @@
 * 标准模板库STL
     * [string类](md/string类.md)
     * [STL概述](md/STL概述.md)
-    * [函数对象]
+    * [函数对象](md/函数对象.md)
     * [vector和deque和list]
     * [set和multiset]
     * [map和multimap]
