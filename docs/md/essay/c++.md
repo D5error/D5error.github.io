@@ -51,8 +51,8 @@
     * [容器概述](md/容器概述.md)
     * [迭代器](md/迭代器.md)
     * [算法简介](md/算法简介.md)
-    * [STL中的‘大’‘中’‘小’和‘相等’]
-    * [vector和deque]
+    * [STL中的大中小和相等](md/STL中的大中小和相等.md)
+    * [vector和deque](md/vector和deque.md)
     * [双向链表list]
     * [set和multiset]
     * [map和multimap]
