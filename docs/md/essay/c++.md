@@ -53,9 +53,9 @@
     * [算法简介](md/算法简介.md)
     * [STL中的大中小和相等](md/STL中的大中小和相等.md)
     * [vector和deque](md/vector和deque.md)
-    * [双向链表list]
-    * [set和multiset]
-    * [map和multimap]
+    * [双向链表list](md/双向链表list.md)
+    * [set和multiset](md/set和multiset.md)
+    * [map和multimap](md/map和multimap.md)
     * [容器适配器]
     * [算法]
 
