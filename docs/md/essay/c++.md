@@ -57,9 +57,7 @@
     * [set和multiset](md/set和multiset.md)
     * [map和multimap](md/map和multimap.md)
     * [容器适配器](md/容器适配器.md)
-    * [算法]
+    * [算法](md/算法.md)
 
-* c++11新特性和c++高级主题
-    * [c++新特性]
-    * [强制类型转换]
-    * [异常处理]
+* c++高级主题
+    * [异常处理](md/异常处理.md)
