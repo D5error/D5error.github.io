@@ -2,13 +2,13 @@
 * [更新记录](md/essay/更新记录.md)
 
 * 大二上
-    * [python（完结未整理）](md/essay/python.md)   
-    * [c++（完结未整理）](md/essay/c++.md)
+    * [python（未整理）](md/essay/python.md)   
+    * [c++（未整理）](md/essay/c++.md)
     * [数据结构与算法](md/essay/数据结构与算法.md)
     * [离散数学](md/essay/离散数学.md)
     * [机器学习](md/essay/机器学习.md)
     * [信号与系统](md/essay/信号与系统.md)
-    * [汇编原理](md/essay/汇编.md)
+    * [汇编](md/essay/汇编.md)
     * [51单片机](md/essay/51单片机.md)
     * [机械设计基础]
     * [matlab]
