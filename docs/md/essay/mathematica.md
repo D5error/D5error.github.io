@@ -5,8 +5,11 @@ Mathematica中的所有东西都被当作表达式看待,表达式可以粗略�
 原子顾名思义就是组成表达式的最小成分,原子可按照以下方法分类:
     * 数字
         * 实数,如`3.22`
+
         * 分数,如`Rational[2,3]`
+
         * 复数,如`1+2I`
+        
 * 符号,如`Pi`,`Plot`,`a`,`b`
 * 字符串,如`Mathematica is a new way of thinking!`
 
