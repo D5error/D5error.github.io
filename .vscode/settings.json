@@ -1,4 +1,9 @@
 {
     "editor.fontSize": 21,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "files.associations": {
+        "*.cpp": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 }
