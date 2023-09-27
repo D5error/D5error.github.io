@@ -1,27 +1,47 @@
-#include<iostream>
-int i1,i2,i3,i4,n,k;
-using namespace std;
-int main()
-{
-    while (true)
-    {
-    k=0;
-    cin>>n;
-    cout<<"å½“nç­‰äº"<<n<<"æ—¶"<<endl;
-    for(i1=1;i1<=n;i1++)
-        for(i2=1;i2<=i1;i2++)
-            for(i3=1;i3<=i2;i3++)
-                for(i4=1;i4<=i3;i4++)
-                    k++;
+/*³ÌĞò¹¦ÄÜ£ºÕâÀïÊµÑé¿É±ä²ÎÊıµÄº¯Êı,ÒÔ¼°¿É±ä²ÎÊıµÄºêµÄÌØĞÔ.
+*¿É±ä²ÎÊıº¯Êıvoid my_sum(int count, ...);
+*Õâ¸öº¯ÊıµÄ¹¦ÄÜÊÇ¼ÆËã¶à¸öÕûÊıµÄºÍ¡£
+*ÆäÖĞcountÊÇ½«ÒªÇóºÍµÄÕûÊıµÄÊıÄ¿¡£
+*ÆäËüµÄ²ÎÊıÊÇ¿É±äµÄ,ÆäÖĞµÚÒ»¸ö²ÎÊıÊÇchar*µÄ²ÎÊı£¬ÓÃÓÚÌáÊ¾¡£
+*ºóÃæµÄ²ÎÊı·Ö±ğÊÇ´ıÇóºÍµÄÕûÊı£¬Ò»¹²count¸ö¡£
+*/
 
-    cout<<"ç¬¬ä¸€ç§ç»“æœï¼š"<<k<<endl;
-    k=0;
-    for(i1=1;i1<=n;i1++)
-        for(i2=i1;i2>=1;i2--)
-            for(i3=i2;i3>=1;i3--)
-                for(i4=i3;i4>=1;i4--)
-                    k++;
-    cout<<"ç¬¬äºŒç§ç»“æœï¼š"<<k<<endl;
-    }
-    return 0;
+#include <stdarg.h>
+#include <stdio.h>
+
+void my_sum(int count, ...);
+
+int main(int argc, char *argv[])
+{
+        int count = 5;
+        printf("compute sum of %d numbers.\n",count);
+        my_sum(count,"the sum of numbers is:", 1, 2, 3, 4, 5);
+        return 0;
+}
+
+void my_sum(int count, ...)
+{
+        //½«ÒªÓÃÀ´´æ·ÅĞèÒªµÄÄ³¸ö¿É±ä²ÎÊıµÄÖ¸ÕëµÄĞÅÏ¢
+        va_list ap;
+        char *prompt;
+        int sum = 0;
+
+        //¿ªÊ¼µÄ³õÊ¼»¯£¬ÆäÖĞapº¬ÓĞÖ¸Ïò¿É±ä²ÎÊıµÄÖ¸ÕëµÄĞÅÏ¢£¬countÊÇµ±Ç°º¯ÊıÖĞ×îºóÒ»¸ö·Ç¿É±äµÄ²ÎÊı(ÕâÑù²ÅÄÜ¶¨Î»).
+        va_start(ap, count);
+
+        //»ñÈ¡²¢·µ»ØÏÂÒ»¸ö¿É±ä²ÎÊıµÄÖµ£¬µÚÒ»¸ö²ÎÊıÊÇap²»ÓÃËµÁË£¬µÚ¶ş¸ö²ÎÊıÊÇÒª»ñÈ¡µÄ²ÎÊıµÄÀàĞÍ¡£
+        //¸ù¾İÎÄµµ£¬Èç¹ûÀàĞÍÖ¸¶¨´íÎóÁË£¬»òÕßÃ»ÓĞÏÂÒ»¸ö¿É±ä²ÎÊıÁË£¬ÄÇÃ´·µ»ØµÄ½á¹ûÊÇËæ»úµÄ¡£
+        prompt = va_arg(ap, char*);
+        printf("%s\n", prompt);
+
+        int i;
+        for(i = 0; i < count; ++i)
+        {
+                sum += va_arg(ap, int);
+        }
+
+        //Ê¹ÓÃÍê¿É±ä²ÎÊıÖ®ºóÒªÓÃÕâ¸öÀ´ÊÍ·Å×ÊÔ´
+        va_end(ap);
+        printf("%d\n",sum);
+
 }
