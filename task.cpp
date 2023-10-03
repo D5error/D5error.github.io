@@ -1,60 +1,39 @@
-#include<iostream>
-#include<cmath>
-using namespace std;
-#define kType long long
-kType func(int m,int n)
+int maxSubArray(int* nums, int numsSize)
 {
-    if(m==0)
+    int maxSum=nums[0],i=0;
+    while(i<numsSize&&nums[i]<=0)
     {
-        return 1;
+        maxSum=nums[i]>maxSum?nums[i]:maxSum;
+        i++;
     }
-    kType k=0;
-    for(int i=1;i<=n;i++)
+    for(int lastSum=0;i<numsSize;)
     {
-        k+=func(m-1,i);
-    }
-    return k;
-}
-kType ans[100];
-kType factorial(int n)
-{
-    if(n==1)
-    {
-        ans[1]=1;
-    }
-    else 
-    {
-        ans[n]=ans[n-1]*n;
-    }
-    return ans[n];
-}
-kType C(int m,int n)
-{
-    //return pow(n,m);
-    return factorial(m+n-1)/factorial(m)/factorial(n-1);
-}
-int main()
-{
-    kType k=0;
-    int n,m;
-    cout<<"请输入m和n："<<endl;
-    cin>>m>>n;
-    for(int x=1;x<=m;x++)
-    {
-        for(int i=1;i<=n;i++)
+        int p1=lastSum,n=0,p2=0;
+        while(i<numsSize&&nums[i]>=0)
         {
-            printf("%5ld ",func(x,i));
+            p1+=nums[i];
+            i++;
         }
-        cout<<endl<<endl;
-    }
-    cout<<endl;
-    for(int x=1;x<=m;x++)
-    {
-        for(int i=1;i<=n;i++)
+        while(i<numsSize&&nums[i]<=0)
         {
-            printf("%5ld ",C(x,i));
+            n+=nums[i];
+            i++;
         }
-        cout<<endl<<endl;
+        while(i<numsSize&&nums[i]>=0)
+        {
+            p2+=nums[i];
+            i++;
+        }
+        if(n+p1>0&&n+p2>0)//�ϲ�
+        {
+            lastSum=p1+p2+n;
+            maxSum=lastSum>maxSum?lastSum:maxSum;
+        }
+        else
+        {
+            maxSum=(maxSum>p1&&maxSum>p2)?maxSum:(p1>p2?p1:p2);
+            lastSum=p2;
+        }
     }
-    return 0;
+    return maxSum;
 }
