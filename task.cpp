@@ -1,39 +1,41 @@
-int maxSubArray(int* nums, int numsSize)
+#include<iostream>
+using namespace std;
+int func(int x)
 {
-    int maxSum=nums[0],i=0;
-    while(i<numsSize&&nums[i]<=0)
+    if(x==0)
     {
-        maxSum=nums[i]>maxSum?nums[i]:maxSum;
-        i++;
+        return 0;
     }
-    for(int lastSum=0;i<numsSize;)
+    if(x%4==0)
     {
-        int p1=lastSum,n=0,p2=0;
-        while(i<numsSize&&nums[i]>=0)
+        int ret=0;
+        while(x%4==0)
         {
-            p1+=nums[i];
-            i++;
+            x/=4;
+            ret++;
         }
-        while(i<numsSize&&nums[i]<=0)
-        {
-            n+=nums[i];
-            i++;
-        }
-        while(i<numsSize&&nums[i]>=0)
-        {
-            p2+=nums[i];
-            i++;
-        }
-        if(n+p1>0&&n+p2>0)//ºÏ²¢
-        {
-            lastSum=p1+p2+n;
-            maxSum=lastSum>maxSum?lastSum:maxSum;
-        }
-        else
-        {
-            maxSum=(maxSum>p1&&maxSum>p2)?maxSum:(p1>p2?p1:p2);
-            lastSum=p2;
-        }
+        return ret+func(x);
     }
-    return maxSum;
+    if(x%3==0)
+    {
+        int ret=0;
+        while(x%3==0)
+        {
+            x/=3;
+            ret++;
+        }
+        return ret+func(x);
+    }
+    return func(x-1)+1;
+}
+int main()
+{
+    int T,x;
+    cin>>T;
+    for(int i=0;i<T;i++)
+    {
+        cin>>x;
+        cout<<func(x)<<endl;
+    }
+    return 0;
 }
