@@ -5,5 +5,22 @@
         "*.cpp": "cpp",
         "iostream": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "overrideName": true,
+            "args": [
+                "-NoExit",
+                "/c",
+                "chcp 65001"
+            ],
+            "icon": "terminal-powershell",
+            "env": {
+                "TEST_VAR": "value"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+
 }
