@@ -1,3 +1,4 @@
-import sys 
-print("Python版本信息:") 
-print(sys.version)
+import csv
+rows=["a","b"]
+w=csv.writer(file)
+w.writerow(rows)
