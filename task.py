@@ -1,4 +1,5 @@
-import csv
-rows=["a","b"]
-w=csv.writer(file)
-w.writerow(rows)
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+t
