@@ -61,7 +61,12 @@
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "editor.fontSize": 19,
     "cSpell.words": [
-        "infty"
+        "infty",
+        "MOSFET"
     ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
 
 }
