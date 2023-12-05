@@ -62,7 +62,8 @@
   "editor.fontSize": 19,
   "cSpell.words": [
     "infty",
-    "MOSFET"
+    "MOSFET",
+    "Raney"
   ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
