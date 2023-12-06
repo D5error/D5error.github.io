@@ -63,7 +63,9 @@
   "cSpell.words": [
     "infty",
     "MOSFET",
-    "Raney"
+    "Raney",
+    "rpos",
+    "struct"
   ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
