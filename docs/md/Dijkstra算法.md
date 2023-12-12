@@ -16,16 +16,39 @@
 
     * 检查新加入的顶点是否可以到达其它顶点，并比较是否比从源点直达短，如果是，则**更新**`dis[]`的数值
 
-    * 不断重复循环过程，知道`T`包含所有顶点
+    * 不断重复循环过程，直到`T`包含所有顶点
 
 # Dijkstra算法实现
 
 ```c
-int dis[MAXSIZE] = {0};
-int T[MAXSIZE] = {0};
-void Dijkstra()
+void dijkstra()
 {
-    int T_size = 0; // 也可采取其它记录方式，思路相同
-    for(int i = 0)
+	put(1);
+	dis[1] = 0;
+	while (heap_size > 0)
+	{
+		int top = get();
+		if (top == t) 						/// 到达某个点就终止，此题没用到
+		{
+			break;
+		}
+		Edge *temp = first[top];
+		while (temp != NULL)				/// 遍历当前点的边
+		{
+			if(temp->v + dis[top] < dis[temp->to])
+			{
+				dis[temp->to] = temp->v + dis[top];
+				if(in_heap[temp->to])
+				{
+					shift_up(pos[temp->to]);/// 该点已入堆但没被当成最小值弹出
+				}
+				else
+				{
+					put(temp->to);          /// 该点没入堆则入堆
+				}
+			}
+			temp = temp->next;
+		}
+	}
 }
 ```
