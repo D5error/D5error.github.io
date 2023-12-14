@@ -65,7 +65,8 @@
     "MOSFET",
     "Raney",
     "rpos",
-    "struct"
+    "struct",
+    "Tarjan"
   ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
