@@ -1,6 +1,8 @@
 # Bellman-ford算法
 <https://www.bilibili.com/video/BV18C4y137ck/?spm_id_from=333.999.0.0&vd_source=c65196c22fdd3605640aeccf1b3b4a0e>
 
+<https://baijiahao.baidu.com/s?id=1746290322832944520&amp;wfr=spider&amp;for=pc>
+
 * 初始化距离数组：将起始顶点到所有其它顶点的距离初始化为无穷大，将起始顶点到自身的距离为0
 
 * 进行$n - 1$次松弛操作：对于每条边$（u，v）$，如果从起始顶点到$u$的距离加上边$（u，v）$小于起始顶点到$v$的距离，**则覆盖**
