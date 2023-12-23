@@ -4,17 +4,12 @@
 
 
 <div id="D5rrr's picture"align="center">
-   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=D5rrr&center=true&size=27"/>
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=D5&center=true&size=27"/>
 </div>
 
 
 <div id="graph" align="center">
     <img src="https://ghchart.rshah.org/D5rrr"/>
-</div>
-
-
-<div id="commit graph" align="center">
-    <img src=https://github-readme-activity-graph.vercel.app/graph?username=d5rrr&bg_color=ffffff&color=000000&title_color=000000&line=000000&point=000000&area_color=000000&custom_title=Commits">
 </div>
 
 
