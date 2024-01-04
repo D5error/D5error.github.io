@@ -2,7 +2,7 @@
 
 ![Alt text](image-178.png)
 
-![Alt text](image-185.png)
+![Alt text](image-87.png)
 
 # 例题
 
