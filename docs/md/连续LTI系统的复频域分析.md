@@ -1,7 +1,5 @@
 # 复频域分析
 
-![Alt text](image-177.png)
-
 ![Alt text](image-178.png)
 
 ![Alt text](image-185.png)
