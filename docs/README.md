@@ -22,4 +22,3 @@
     <a href="https://github.com/" target="_blank"><img src="_media/github.svg" alt="github" width="40" height="40"/></a>
 </p>
 
-
