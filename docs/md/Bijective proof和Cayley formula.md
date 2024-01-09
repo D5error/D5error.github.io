@@ -1,5 +1,0 @@
-# Bijective proof
-
-
-# Caylay formula
-
