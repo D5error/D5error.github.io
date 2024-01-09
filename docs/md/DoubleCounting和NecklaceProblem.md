@@ -14,9 +14,20 @@
 
 ![Alt text](image-505.png)
 
-/////////
+![Alt text](image-511.png)
 
 # 总结
 
 ![Alt text](image-506.png)
 
+# Necklace problem
+
+![Alt text](image-512.png)
+
+![Alt text](image-513.png)
+
+![Alt text](image-514.png)
+
+![Alt text](image-515.png)
+
+![Alt text](image-516.png)
