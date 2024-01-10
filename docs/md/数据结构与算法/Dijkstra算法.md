@@ -1,8 +1,6 @@
 # Dijkstra算法
 <https://www.bilibili.com/video/BV1ha4y1T7om/?spm_id_from=pageDriver&vd_source=c65196c22fdd3605640aeccf1b3b4a0e>
 
-![Alt text](image-575.png)
-
 1. 数组声明
     * 声明数组`dis`保存从起点到各个顶点的最短距离
 
