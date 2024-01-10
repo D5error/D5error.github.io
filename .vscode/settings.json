@@ -73,6 +73,8 @@
     "multiset",
     "Raney",
     "rpos",
+    "strcpy",
+    "strlen",
     "Strling",
     "struct",
     "substr",
