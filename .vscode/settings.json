@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "files.associations": {
     "*.cpp": "cpp",
     "iostream": "cpp",
