@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>D5's Blog</title>
+    <title>D5error's Blog</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
@@ -18,12 +18,14 @@
 <body>
     <div id="app">加载中...</div>
     <script>
-        window.$docsify = {
+        window.$docsify = 
+        {
             name: 'D5',    <!--侧边栏顶部-->
             auto2top: true,    <!--切换页面自动跳转顶部-->
             coverpage: false,    <!--封面页-->
             loadSidebar: '侧边栏.md',    <!--自定义侧边栏-->
-            count:{
+            count:
+            {
                 countable:true,
                 fontsize:'0.9em',
                 color:'rgb(90,90,90)',
@@ -42,13 +44,26 @@
 
     
 <style>
-    .giscus-container {
+    .giscus-container 
+    {
         display: none;
     }
 </style>
 
 <div id="giscus-container" class="giscus-container" align="center">
-    <script src="https://giscus.app/client.js" data-repo="D5rrr/D5rrr.github.io" data-repo-id="R_kgDOKCAVzQ" data-category="General" data-category-id="DIC_kwDOKCAVzc4CYSeA" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light_high_contrast" data-lang="zh-CN" crossorigin="anonymous" async> </script>
+    <script src="https://giscus.app/client.js" data-repo="D5errorr/D5error.github.io" 
+    data-repo-id="R_kgDOKCAVzQ" data-category="General" 
+        data-category-id="DIC_kwDOKCAVzc4CYSeA" 
+        data-mapping="url" 
+        data-strict="0" 
+        data-reactions-enabled="1" 
+        data-emit-metadata="0" 
+        data-input-position="top" 
+        data-theme="light_high_contrast" 
+        data-lang="zh-CN" 
+        crossorigin="anonymous" 
+        async> 
+    </script>
 </div>
 
 
@@ -60,18 +75,22 @@
 
         
 <script>
-    function showElement() {
+    function showElement() 
+    {
         var container = document.getElementById("giscus-container");
         container.style.display = "block";
     }
 
-    function hideElement() {
+    function hideElement() 
+    {
         var container = document.getElementById("giscus-container");
         container.style.display = "none";
     }
 
-    window.addEventListener("hashchange", function() {
-        if (window.location.hash === "#/") {
+    window.addEventListener("hashchange", function() 
+                            {
+        if (window.location.hash === "#/") 
+        {
             showElement();
         } else {
             hideElement();
