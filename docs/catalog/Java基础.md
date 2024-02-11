@@ -8,7 +8,7 @@
 
 - [流程控制](md/Java基础/流程控制.md)
 
-- Java数组
+- [Java数组](md/Java基础/Java数组.md)
 
 - Java方法
 
