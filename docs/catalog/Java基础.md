@@ -10,7 +10,7 @@
 
 - [Java数组](md/Java基础/Java数组.md)
 
-- Java方法
+- [Java方法](md/Java基础/Java方法.md)
 
 - Java案例
 - 面向对象基础
