@@ -14,10 +14,10 @@
 
 - [面向对象基础](md/Java基础/面向对象基础.md)
 
+- [常用API](md/Java基础/常用API.md)
 
 
-- [常用API](md/Java基础/.md)
-                - [项目实战](md/Java基础/.md)
+
 - [面向对象高级](md/Java基础/.md)
 - [JDK8新特性](md/Java基础/.md)
 - [正则表达式](md/Java基础/.md)
