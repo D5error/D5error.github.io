@@ -12,4 +12,6 @@
 
 <h3 align = "center">d5error@163.com</h3>
 
-<h1 align = "center">这个家伙什么也没留下</h>
+<h1 align = "center">这个家伙什么也没留下~</h>
+
+<h4 align = "center">网页布局和排版暂时不改，目前主要专注于内容的更新。
