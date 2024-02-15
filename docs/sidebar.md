@@ -3,11 +3,11 @@
 * [更新记录](更新记录.md)
 
 * 大二上
-    * [C++](大二上/C++.md)
+    * [C++](大二上/C++/C++.md)
 
-    * [Python](catalog/python.md)   
+    * [Python](大二上/Python/Python.md)   
 
-    * [离散数学](catalog/离散数学.md)
+    * [离散数学](大二上/离散数学/离散数学.md)
 
     * [机器学习](catalog/机器学习.md)
 
