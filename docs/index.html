@@ -11,11 +11,17 @@
 
 <body>
     <div id="app"></div>
+
+    <!-- 在github上编辑 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
     <script>
         window.$docsify = 
         {
+            repo: 'https://github.com/D5error/D5error.github.io/', // 右上角挂件
             name: '<b>D5</b>',    // 侧边栏顶部
             auto2top: true,    // 切换页面自动跳转顶部
+            loadSidebar: true, // 自定义侧边栏
             formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}', // 文档更新日期
             externalLinkTarget: '_blank', //外部链接的打开方式
             count:
@@ -25,15 +31,30 @@
                 color: 'rgb(90,90,90)',
                 language: 'chinese',
                 isExpected: false,
-            }
+            },
+            plugins: [
+                EditOnGithubPlugin.create(
+                    'https://github.com/D5error/D5error.github.io/tree/main/docs/',
+                    docEditBase,
+                    '一键在Github中编辑'
+                )
+            ]
         };
     </script>
 
+    {docsify-updated}
+
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-
-
     
+
+
+
+
+
+
+
+
     <!-- 文本计数 -->
     <script src="https://unpkg.com/docsify-count/dist/countable.min.js"></script>
 
