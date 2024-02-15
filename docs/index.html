@@ -22,9 +22,8 @@
             name: '<b>D5</b>',    // 侧边栏顶部
             auto2top: true,    // 切换页面自动跳转顶部
             loadSidebar: 'sidebar.md', // 自定义侧边栏
-            coverpage: false,    <!--封面页-->
-            formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}', // 文档更新日期
-            externalLinkTarget: '_blank', //外部链接的打开方式
+            subMaxLevel: 2, // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能
+
             count:
             {
                 countable: true,
@@ -43,7 +42,6 @@
         };
     </script>
 
-    docsify-updated
 
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
