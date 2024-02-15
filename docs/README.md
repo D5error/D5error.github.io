@@ -15,5 +15,5 @@
 <h1 align = "center">这个家伙什么也没留下~</h>
 
 <p>
-    <audio src="_media/Everything'sGone.flac" controls autopaly></audio>
+    <audio src="_media/Everything'sGone.flac" controls autoplay></audio>
 </p>
