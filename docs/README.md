@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="_media/logo.png" width="100" height="100"/>
+    <img src="_media/logo.png" width="15%"/>
 </div>
 
 <div align="center">
@@ -13,6 +13,8 @@
 <h3 align = "center">d5error@163.com</h3>
 
 <h1 align = "center">这个家伙什么也没留下~</h>
+
+<br>
 
 <p>
     <audio src="_media/Everything'sGone.flac" controls></audio>
