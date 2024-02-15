@@ -1,1 +1,1 @@
-[HTML](catalog/HTML.md)
+[HTML](md/HTML/HTML.md)
