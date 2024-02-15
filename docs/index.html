@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,23 +13,15 @@
 <body>
     <div id="app"></div>
 
-    <!-- 在github上编辑 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-
     <script>
-        window.$docsify = 
-        {
+        window.$docsify = {
             repo: 'https://github.com/D5error/D5error.github.io/', // 右上角挂件
-            name: '<b>D5</b>',    // 侧边栏顶部
-            auto2top: true,    // 切换页面自动跳转顶部
+            name: '<b>D5</b>', // 侧边栏顶部
+            auto2top: true, // 切换页面自动跳转顶部
             loadSidebar: 'sidebar.md', // 自定义侧边栏
-            subMaxLevel: 2, // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能
-
-            count:
-            {
-                countable: true,
-                fontsize: '0.9em',
-                color: 'rgb(90,90,90)',
+            subMaxLevel: 6, // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能
+            count: {
+                float: 'top',
                 language: 'chinese',
                 isExpected: false,
             },
@@ -42,31 +35,23 @@
         };
     </script>
 
-
+    <!-- Docsify主要插件 -->
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-    
 
-
-
-
-
-
-
+    <!-- 在github上编辑 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 
     <!-- 文本计数 -->
     <script src="https://unpkg.com/docsify-count/dist/countable.min.js"></script>
 
-    
+
     <!-- LateX -->
     <script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-
-
-
-    <!-- LateX -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 
 </body>
+
 </html>

@@ -1,10 +1,9 @@
+* [首页]()
 
-* [更新记录2024](catalog/更新记录2024.md)
-
-* [更新记录2023](catalog/更新记录2023.md)
+* [更新记录](更新记录.md)
 
 * 大二上
-    * [C++](catalog/c++.md)
+    * [C++](大二上/C++.md)
 
     * [Python](catalog/python.md)   
 
