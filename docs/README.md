@@ -13,9 +13,3 @@
 <h3 align = "center">d5error@163.com</h3>
 
 <h1 align = "center">这个家伙什么也没留下~</h>
-
-<br>
-
-<p>
-    <audio src="_media/Everything'sGone.flac" controls></audio>
-</p>
