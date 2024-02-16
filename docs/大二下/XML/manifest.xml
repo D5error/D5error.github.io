@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Widget version="999" frameRate="0" screenWidth="1080" useVariableUpdater="DateTime.Minute" disableCutRoundCorner="false" useHardwareCanvas="false" cornerCutType="rounded_rect">
+    <!-- 开屏刷新数据 -->
+    <ExternalCommands>
+        <Trigger action="init,resume">
+            <FunctionCommand target="fra" />
+            <AnimationCommand target="kp_Ani_1" command="play(0,0)" />
+            <AnimationCommand target="kp_Ani_1" command="play"/>
+        </Trigger>
+        <Trigger action="pause">
+            <AnimationCommand target="kp_Ani_1" command="play(0,0)" />
+        </Trigger>
+    </ExternalCommands>
+
+    <!-- 帧率调整//推荐写法//通过FunctionCommand命令在init,resume时调用 -->
+    <Group name="frameRateSetting">
+        <Function name="fra">
+            <IfCommand ifCondition="eqs(@isPreviewMode,'true')">
+                <Consequent>
+                    <FrameRateCommand rate="60" />
+                </Consequent>
+                <Alternate>
+                    <AnimationCommand target="frame" command="play"/>
+                </Alternate>
+            </IfCommand>
+        </Function>
+        <FramerateController name="frame" initPause="true" loop="false">
+            <ControlPoint frameRate="120" time="0" />
+            <ControlPoint frameRate="120" time="3000" />
+            <ControlPoint frameRate="0" time="3100" />
+        </FramerateController>
+    </Group>
+
+    <!-- 开场动画 -->
+    <!-- 喝水量 -->
+    <Var name="kp_Ani_1">
+        <VariableAnimation initPause="true" loop="false">
+            <AniFrame value="0" dtime="0" easeType="SineEaseInOut"/>
+            <AniFrame value="1" dtime="800" />
+        </VariableAnimation>
+    </Var>
+
+    <!-- 每日重置喝水记录 -->
+    <Var name="hs_isvi" expression="#date" threshold="1">
+        <Trigger>
+            <VariableCommand name="hs" expression="0"/>
+        </Trigger>
+    </Var>
+
+    <!-- 饮水记录 -->
+    <!-- 喝水点击增长、减少参数 -->
+    <Var name="hs" expression="0" persist="true" const="true"/>
+    <Var name="ye_v0_dj_1" expression="4" />  <!-- 已修改 -->
+    <Var name="Time_D1_v0_dj_1" expression="min(max(#time_sys-#Time_temp1_v0_dj_1,0),300)/300" />
+    <Var name="Time_D2_v0_dj_1" expression="min(max(#time_sys-#Time_temp2_v0_dj_1,0),300)/300" />
+    <Var name="Make_Value2_v0_dj_1" expression="(#Time_D1_v0_dj_1-1)*(#Time_D1_v0_dj_1-1)*1" />
+    <Var name="Make_Value3_v0_dj_1" expression="(#Time_D2_v0_dj_1-1)*(#Time_D2_v0_dj_1-1)*(0-1)" />
+    <Var name="V_dj_1" expression="abs(#hs*(0-1)+#Make_Value2_v0_dj_1+#Make_Value3_v0_dj_1)" />
+
+
+
+
+    <!-- 背景 -->
+    <Rectangle x="0" y="0" w="#view_width" h="#view_height" cornerRadius="0" fillColor="#93c64e" alpha="123"/>
+    
+    <!-- 进度 -->
+    <Rectangle x="0" y="0" w="#view_width*(#V_dj_1/4)*#kp_Ani_1" h="#view_height" cornerRadius="0" fillColor="#93c64e"/>
+
+    <Group x="#view_width/2" y="#view_height/2" w="440" h="160" align="center" alignV="center" pivotX="440/2" pivotY="160/2" scale="min(#view_width/440,#view_height/160)">
+        <!-- 已喝水数 -->
+        <Text x="176" y="62" align="center" alignV="center" size="90" color="#ffffff" textExp="#hs" fontPath="etc/OPlusSans3-Bold.ttf"/> 
+        
+        <!-- 斜杠 -->
+        <Text x="220" y="62" align="center" alignV="center" size="60" color="#ffffff" text="/" fontPath="etc/OPlusSans3-Bold.ttf"/>
+        
+        <!-- 目标喝水数 -->
+        <Text x="264" y="62" align="center" alignV="center" size="90" color="#ffffff" text="4" fontPath="etc/OPlusSans3-Bold.ttf"/>
+        
+        <!-- 单位 -->
+        <Text x="220" y="122" align="center" alignV="center" size="24" color="#ffffff" text="CUP" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+        <!-- 减号图像 -->
+        <Image x="30" y="45" src="images/jian.png" alpha="255-eq(#hs,0)*126"/>
+        
+        <!-- 加号图像 -->
+        <Image x="340" y="45" src="images/jia.png" alpha="255-eq(#hs,4)*126"/>
+
+        <!-- 减号按钮 -->
+        <Button x="0" y="0" w="160" h="160" visibility="ne(#hs,0)">
+            <Triggers>
+                <Trigger action="up">
+                    <FunctionCommand target="fra" />
+                    <VariableCommand name="hs" expression="ifelse(eq(#hs,0),0,#hs-1)"/>
+                    <VariableCommand name="Time_temp2_v0_dj_1" expression="#time_sys"/>
+                </Trigger>
+            </Triggers>
+        </Button>
+
+        <!-- 加号按钮 -->
+        <Button x="280" y="0" w="160" h="160" visibility="ne(#hs,4)">
+            <Triggers>
+                <Trigger action="up">
+                    <FunctionCommand target="fra" />
+                    <VariableCommand name="hs" expression="ifelse(eq(#hs,4),4,#hs+1)"/>
+                    <VariableCommand name="Time_temp1_v0_dj_1" expression="#time_sys"/>
+                </Trigger>
+            </Triggers>
+        </Button>
+    </Group>
+</Widget>
