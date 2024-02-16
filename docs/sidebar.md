@@ -24,7 +24,7 @@
 
     * [HTML](大二下/HTML/HTML.md)
 
-    <!-- * * [Java基础](大二下/Java基础/Java基础.md) -->
+    * [Java基础](大二下/Java基础/Java基础.md)
 
     <!-- * [运筹学](大二下/运筹学/运筹学.md) -->
 
