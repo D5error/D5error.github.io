@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Widget frameRate="0" version="2" screenWidth="1080" useVariableUpdater="DateTime.Second" disableCutRoundCorner="false" useHardwareCanvas="false" cornerCutType="capsule_rect" >
+      <ExternalCommands>
+        <Trigger action="init,resume">
+            <!-- 设置帧率 -->
+            <FrameRateCommand rate="30" />
+            <!-- 不在小部件编辑页时1秒后帧率为0 -->
+            <FrameRateCommand rate="0" delay="1000" condition="!eqs(@isPreviewMode,'true')"/>
+            <FunctionCommand target="fra" />
+            <!-- ContentProvider接口在切屏时必须主动更新一次  -->
+            <BinderCommand name="WeatherProvider" command="refresh" />
+            <BinderCommand name="HourWeatherProvider" command="refresh" />
+        </Trigger>
+    </ExternalCommands>
+    <!-- 帧率调整//推荐写法//通过FunctionCommand命令在init,resume时调用 -->
+    <Group name="frameRateSetting">
+        <Function name="fra">
+            <IfCommand ifCondition="eqs(@isPreviewMode,'true')">
+                <Consequent>
+                    <FrameRateCommand rate="10" />
+                </Consequent>
+                <Alternate>
+                    <AnimationCommand target="frame" command="play"/>
+                </Alternate>
+            </IfCommand>
+        </Function>
+        <FramerateController name="frame" initPause="true" loop="false">
+            <ControlPoint frameRate="10" time="0" />
+            <ControlPoint frameRate="10" time="800" />
+            <ControlPoint frameRate="0" time="1000" />
+        </FramerateController>
+    </Group>
+    <VariableBinders>
+        <!-- 收到广播更新数据 -->
+        <BroadcastBinder action="com.miui.weather.widget_weather_detail">
+            <Trigger>
+                <AnimationCommand target="fra" command="play" />
+                <BinderCommand name="WeatherProvider" command="refresh" />
+                <BinderCommand name="HourWeatherProvider" command="refresh" />
+            </Trigger>
+        </BroadcastBinder>
+        <ContentProviderBinder name="WeatherProvider" uriFormat="content://weather/weatherData/1/%s" uriParas="@localId" countName="hasweather">
+            <!-- 城市北纬东经 -->
+            <Variable name="city_id" type="string" column="city_id" />
+            <!-- 城市/街道名称 -->
+            <Variable name="weather_location" type="string" column="city_name" />
+            <!-- 天气类型（实时） -->
+            <Variable name="weather_type" type="int" column="weather_type" />
+            <!-- 今日温度 -->
+            <Variable name="weather_temperature" type="string" column="temperature" />
+            <!-- 今日温度区间（20℃~30℃） -->
+            <Variable name="weather_temperature_range" type="string" column="temperature_range" />
+            <!-- 天气现象（实时）：晴 -->
+            <Variable name="weather_description" type="string" column="description" />
+            <!-- 日出时间 -->
+            <Variable name="weather_sunrise" type="int" column="sunrise" />
+            <!-- 日落时间 -->
+            <Variable name="weather_sunset" type="int" column="sunset" />
+            <!-- 风力 -->
+            <Variable name="weather_wind" type="string" column="wind" />
+            <!-- 气压 -->
+            <Variable name="weather_pressure" type="string" column="pressure" />
+            <!-- 湿度 -->
+            <Variable name="weather_humidity" type="string" column="humidity" />
+            <!-- 天气类型（预报） -->
+            <Variable name="weather_forecast_type" type="string" column="forecast_type" />
+            <!-- 天气现象（预报） -->
+            <Variable name="weather_weathernamesfrom" type="string" column="weathernamesfrom" />
+            <!-- 最高温度 -->
+            <Variable name="weather_temphigh" type="string" column="tmphighs" />
+            <!-- 最低温度 -->
+            <Variable name="weather_templow" type="string" column="tmplows" />
+            <!-- 实时天气信息发布时间 -->
+            <Variable name="weather_publish_time" type="string" column="publish_time" />
+            <!-- 气温单位，1代表摄氏度，0代表华氏度 -->
+            <Variable name="weather_temperature_unit" type="int" column="temperature_unit" />
+            <!-- AQI等级 -->
+            <Variable name="weather_aqi" type="int" column="aqilevel" />
+            <Trigger>
+                <!-- 简化版天气ID -->
+                <VariableCommand name="weatherId" expression="ifelse(#weather_type}25||#weather_type{0,0, (#weather_type}=4**#weather_type{=6||#weather_type}=8**#weather_type{=11||#weather_type==25),4,#weather_type}=13**#weather_type{=17,13 ,#weather_type}=18**#weather_type{=21||#weather_type==23,18,#weather_type)"/>
+                <!-- 日出 -->
+                <VariableCommand name="_sunrise" expression="#weather_sunrise+int((#time_sys-#hour24*3600000-#minute*60000-#second*1000)/1000)*1000" type="number" />
+                <!-- 日落 -->
+                <VariableCommand name="_sunset" expression="#weather_sunset+int((#time_sys-#hour24*3600000-#minute*60000-#second*1000)/1000)*1000" type="number" />
+                <!-- 空气质量 -->
+                <VariableCommand name="_quality" expression="ifelse(#weather_aqi{=50,'优',#weather_aqi{=100,'良好',#weather_aqi{=150,'轻度污染',#weather_aqi{=200,'中度污染',#weather_aqi{=300,'重度污染',#weather_aqi}300,'严重污染','优')" type="string" />
+            </Trigger>
+        </ContentProviderBinder>
+        <!-- 24H天气 -->
+        <ContentProviderBinder name="HourWeatherProvider" uriFormat="content://weather/hourlyData/1/%s" uriParas="@localId" countName="HourHasweather">
+            <!-- 实际天气数据发布时间 -->
+            <Variable name="hour_publish_time" type="string" column="publish_time" />
+            <!-- 未来23小时的时间戳 -->
+            <Variable name="hour_date_time" type="string[]" column="date_time" />
+            <!-- 未来23小时的温度 -->
+            <Variable name="hour_temperature" type="string[]" column="temperature" />
+            <!-- 未来23小时的天气类型 -->
+            <Variable name="hour_weather_type" type="string[]" column="weather_type" />
+        </ContentProviderBinder>
+    </VariableBinders>
+
+    <!-- 展示城市变化时更新数据 -->
+    <Var name="localId" expression="@customEditLocalId" type="string">
+        <Trigger>
+            <AnimationCommand target="fra" command="play" />
+            <BinderCommand name="WeatherProvider" command="refresh" />
+            <BinderCommand name="HourWeatherProvider" command="refresh" />
+        </Trigger>
+    </Var>
+    <Var name="textSize" expression="255" type="number" const="true"/>
+    <Rectangle x="0" y="0" w="#view_width" h="#view_height" alpha="#textSize" fillColor="#f6f6f6" cornerRadius="0"/>
+
+
+
+
+<Image x="#view_width/2-384" y="#view_height/2-11" align="center" alignV="center"  src="dw.png" />
+
+<Text x="#view_width/2-360" y="#view_height/2-9" alignV="center"  color="#146bec" size="44" text="城市街道" fontPath="etc/OPlusSans3-Bold.ttf"/>
+<Text x="#view_width/2-403" y="#view_height/2-104" alignV="center"  color="#146bec" size="99" textExp="ifelse(strIsEmpty(@weather_location),'无数据',@weather_location)" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+<Text x="#view_width/2-403" y="#view_height/2+72" alignV="center"  color="#146bec" size="44" textExp="ifelse(strIsEmpty(@_quality),'无数据','空气质量:'+@_quality)" fontPath="etc/OPlusSans3-Bold.ttf"/>
+<Text x="#view_width/2-403" y="#view_height/2+132" alignV="center"  color="#146bec" size="44" textExp="ifelse(strIsEmpty(@weather_humidity),'无数据','湿度:'+@weather_humidity+'%')" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+<Text x="#view_width/2+403" y="#view_height/2-104" align="right" alignV="center"  color="#146bec" size="99" textExp="ifelse(strIsEmpty(@weather_temperature),'无数据',@weather_temperature)" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+<Text x="#view_width/2+403" y="#view_height/2" align="right" alignV="center"  color="#146bec" size="44" textExp="ifelse(strIsEmpty(@weather_description),'无数据',@weather_description)" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+<Text x="#view_width/2+403" y="#view_height/2+77" align="right" alignV="center"  color="#146bec" size="44" textExp="ifelse(strIsEmpty(@weather_temphigh),'无数据','最高温度:'+@weather_temphigh+'℃')" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+<Text x="#view_width/2+403" y="#view_height/2+128" align="right" alignV="center"  color="#146bec" size="44" textExp="ifelse(strIsEmpty(@weather_templow),'无数据','最低温度:'+@weather_templow+'℃')" fontPath="etc/OPlusSans3-Bold.ttf"/>
+
+
+
+
+
+
+
+
+
+    <!-- 打开天气app，并跳转到到展示城市 -->
+    <Button x="0" y="0" w="#view_width" h="#view_height">
+        <Triggers>
+            <Trigger action="up">
+                <IntentCommand action="com.miui.weather.widget_weather_detail" package="com.miui.weather2" class="com.miui.weather2.ActivityWeatherMain" flags="270532608">
+                    <Extra name="localId" type="string" expression="@weather_location" />
+                    <Extra name="cityId" type="string" expression="@city_id" />
+                </IntentCommand>
+            </Trigger>
+        </Triggers>
+    </Button>
+ 
+</Widget>

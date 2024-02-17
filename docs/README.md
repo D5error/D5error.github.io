@@ -12,4 +12,4 @@
 
 <h3 align = "center">d5error@163.com</h3>
 
-<h1 align = "center">这个家伙什么也没留下~</h>
+<h1 align = "center">这个家伙什么也没留下...</h>
