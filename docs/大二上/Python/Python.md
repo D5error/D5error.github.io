@@ -481,11 +481,9 @@ print('函数外 ',a,b)
 
 ## 类和对象
 
-### 面向对象
+### 创建和使用类 
 
-#### 创建和使用类
-
-##### 创建Dog类
+#### 创建Dog类
 ```python
 class dog():
     def __init__(self,name):
@@ -500,7 +498,7 @@ class dog():
 
 * 方法`__init__(self)`：类似构造函数
 
-##### 根据类创建实例
+#### 根据类创建实例
 ```python
 my_dog=Dog("John")
 ```
@@ -558,4 +556,3 @@ my_dog=Dog("John")
     * 单下划线、双下划线、头尾双下划线说明：
 
     ![Alt text](image-6.png)    
-
