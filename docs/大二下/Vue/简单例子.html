@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message">
+        {{message}}
+    </div>
+</body>
+<script>
+    // 定义Vue对象
+    new Vue({
+        el: "#app", // Vue接管的区域
+        data:{
+            message: "hy请原谅我，请原谅我。"
+        }
+    })
+</script>
+</html>

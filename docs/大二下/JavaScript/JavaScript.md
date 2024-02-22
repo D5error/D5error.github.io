@@ -6,6 +6,10 @@
 
 [JS引入方式](https://github.com/D5error/D5error.github.io/tree/main/docs/md/HTML/JS引入方式.html)
 
+## 参考文档
+
+[w3school](https://www.w3school.com.cn/jsref/index.asp)
+
 ## 基础语法
 
 ![Alt text](image-2.png)
@@ -54,8 +58,38 @@
 
 ![Alt text](image-17.png)
 
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
+
+![Alt text](image-20.png)
+
 ### BOM
 
+![Alt text](image-21.png)
+
+![Alt text](image-22.png)
+
+![Alt text](image-23.png)
+
 ### DOM
-<!-- 
-## 事件 -->
+
+![Alt text](image-24.png)
+
+![Alt text](image-25.png)
+
+![Alt text](image-26.png)
+
+[DOM例子](DOM案例.html)
+
+## 事件监听
+
+### 事件绑定
+
+![Alt text](image-27.png)
+
+[事件绑定例子](./事件绑定例子.html)
+
+### 常见事件
+
+![Alt text](image-28.png)

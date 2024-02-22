@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="pic" src="image-1.png" width="40%"> <br> <br>
+
+    <div>D5</div><br>
+    <div>D5error@163.com</div><br>
+
+    <input type="checkbox" name="1"> 你好
+    <input type="checkbox" name="1"> 你你好
+    <input type="checkbox" name="1"> 你你好好
+
+    <script>
+        // 更换图片
+        var img = document.getElementById("pic");
+        img.src = "image-2.png";
+
+        // 将div标签的内容后加上666（红色）
+        var texts = document.getElementsByTagName("div");
+        for(let i = 0; i < texts.length; i++){
+            const text = texts[i];
+            text.innerHTML += "<font color = 'red'>666</font>";
+
+        }
+
+        // 使所有复选框选中
+        var boxes = document.getElementsByName("1");
+        for(let i = 0; i < boxes.length; i++){
+            const box = boxes[i];
+            box.checked = true;
+        }
+    </script>
+</body>
+</html>
